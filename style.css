@@ -1,0 +1,130 @@
+/*pages de base */
+
+body {
+    font-family: 'Barlow', sans-sherif;
+    font-family: 'Radjhani, sans-sherif;
+    font-size: 20px;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Barlow', bold;
+    colors: #5C5248;
+}
+
+h1 {
+    font-size: 20px; 
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 12px ;
+}
+
+p {
+    font-size: 10px;
+}
+
+
+
+
+#image-de-fond-voiture {
+    background-image : c:\Users\nadeg\OneDrive\Bureau\PROJET GARAGE AUTO POUR ECF\PHOTOS\Nouveau dossier\pexels-pixabay-35624.jpg
+    background-size : 100%
+}
+
+
+/*logo*/
+.logo {
+    background-image: url('chemin/vers/votre/image.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    display : flex;
+    width: 200px;
+    height: 100px;
+}
+
+/*bouton connexion*/
+.connexion {
+    background-color: #CB410B;
+    color: #5C5248;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: #fff;
+}
+
+table td:first-child {
+    border-left: 1px solid #ccc;
+}
+
+table td:last-child {
+    border-right: 1px solid #ccc;
+}
+
+table tr:first-child td {
+    border-top: 1px solid #ccc;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+
+/*footer*/
+footer {
+    background-color: #B2BEB5;
+    font-family: Barlow;
+    font-style: 14px; left
+}
+
+
