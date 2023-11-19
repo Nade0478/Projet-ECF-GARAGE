@@ -1,0 +1,36 @@
+/* FILEPATH: /c:/Users/nadeg/OneDrive/Bureau/Bootstrap/Projet-ECF-GARAGE/style-voitures.css */
+
+/* Style pour le menu de navigation */
+nav {
+    background-color: #CC7722; /* Fond ocre */
+    border: 5px solid #8b4513; /* Bordure marron clair épaisse */
+    display: flex; /* Afficher les éléments de menu sur une même ligne */
+}
+
+/* Style pour les éléments de menu */
+nav a {
+    color: #ff8c00; /* Texte en gros orange */
+    font-size: 24px; /* Taille de police */
+    padding: 10px; /* Espacement intérieur */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+/* Style pour la liste */
+ul {
+    list-style-type: none; /* Supprimer les puces */
+    margin: 0; /* Supprimer les marges */
+    padding: 0; /* Supprimer les espacements */
+}
+
+/* Style pour les éléments de la liste */
+li {
+    display: inline-block; /* Afficher les éléments sur une même ligne */
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+
