@@ -1,0 +1,64 @@
+
+/* Change the background color to light red */
+body {
+    background-color: lightcoral;
+}
+
+/* Change the footer color to orange */
+footer {
+    background-color: orange;
+}
+
+
+/* Sélectionne le formulaire de contact */
+form {
+    /* Centre le formulaire horizontalement */
+    margin: 0 auto;
+    /* Définit la largeur du formulaire à 50% de la largeur de l'écran */
+    width: 50%;
+    /* Utilise Flexbox pour aligner les éléments du formulaire */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Ajoute une bordure en 3D autour du formulaire */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+    /* Ajoute un peu de marge autour du formulaire */
+    padding: 20px;
+}
+
+/* Ajoute un plan d'accès au footer */
+footer {
+    /* Définit la hauteur du footer à 80% de la hauteur de l'écran */
+    height: 80vh;
+    /* Utilise Flexbox pour aligner les éléments du footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajoute un style au plan d'accès */
+#map {
+    /* Définit la hauteur du plan d'accès à 10% de la hauteur du footer */
+    height: 10%;
+    /* Définit la largeur du plan d'accès à 10% de la largeur du footer */
+    width: 10%;
+    /* Ajoute une bordure en 3D autour du plan d'accès */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+/* Ajoute un cadre 3D autour des horaires */
+#opening-hours {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+    padding: 20px;
+}
+
+
+
+
