@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Site web du garage automobile de Monsieur V.PARROT>
+    <meta name="keywords" content="garage, automobile, réparation, voiture, Toulouse">
+    <meta name="author" content="Vincent PARROT">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="fr-FR">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="reply-to" content="
+    <meta name="category" content="garage automobile">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="url" content="https://www.garage-vparrot.fr">
+    <meta name="identifier-url" content="https://www.garage-vparrot.fr">
+    <meta name="pagename" content="Garage V.PARROT">
+    <meta name="coverage" content="Worldwide">
+    <meta name="rating" content="General">
+    <meta property="og:title" content="Garage V.PARROT">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.garage-vparrot.fr">
+    <meta property="og:image" content="https://www.garage-vparrot.fr/images/logo.png">
+    <meta property="og:description" content="Site web du garage automobile de Monsieur V.PARROT">
+    <meta property="og:site_name" content="Garage V.PARROT">
+    <meta property="og:locale" content="fr_FR">
+   <title>Garage de V.PARROT</title>
+ </head>
+ <body>
+    <header>
+      <h1>GARAGE V.PARROT</h1>
+      <p>Vincent Parrot, fort de ses 15 années d'expérience dans la réparation automobile, a ouvert son propre garage à Toulouse en 2021</P>
+      <nav aria-label="Menu principal">
+         <ul>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Véhicules">Véhicules d'occasion</a></li>
+            <li><a href="#Contact">Contact</a></li>
+         </ul>
+      </nav>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+   <header>
+   </header>
+   <main>
+     <section id="Presentation">
+       <h2>Présentation</h2>
+       <p>Présentation du garage de v.PARROT></p>
+     </section>
+     <section id="Services">
+       <h2>Services</h2>
+       <p>Services de réparation Véhicules</p>
+     </section>
+     <section id="Véhicules">
+       <h2>Véhicules d'accasions</h2>
+       <p>Véhicules d'occasions en vente</p>
+     </section>
+     <section id="Contact">
+       <h2>Contact</h2>
+       <p>Pour plus d'information cliquer sur le lien et remplisser la fiche de renseignement</p>
+     </section>
+   </main>
+
+<!-- FILEPATH: /C:/Users/nadeg/OneDrive/Bureau/Bootstrap/Projet-ECF-GARAGE/Véhicules.html -->
+
+<!-- Formulaire de recherche -->
+<form>*ù§
+  <div class="form-group">
+    <label for="searchInput">Rechercher un véhicule :</label>
+    <input type="text" class="form-control" id="searchInput" placeholder="Entrez un modèle ou une marque">
+  </div>
+</form>
+
+<!-- Liste des véhicules -->
+<ul id="vehicleList">
+  <li>Audi A3</li>
+  <li>Audi Q5</li>
+  <li>BMW Serie 3</li>
+  <li>BMW X5</li>
+  <li>Citroen C3</li>
+  <li>Citroen C4 Picasso</li>
+  <li>Peugeot 208</li>
+  <li>Peugeot 3008</li>
+  <li>Renault Clio</li>
+  <li>Renault Megane</li>
+</ul>
+
+<!-- Script pour filtrer la liste des véhicules -->
+<script>
+  // Récupération de la liste des véhicules
+  const vehicleList = document.getElementById('vehicleList');
+  const vehicles = vehicleList.getElementsByTagName('li');
+
+  // Récupération de l'input de recherche
+  const searchInput = document.getElementById('searchInput');
+
+  // Ajout d'un écouteur d'événement sur l'input de recherche
+  searchInput.addEventListener('keyup', function() {
+    // Récupération de la valeur de l'input de recherche
+    const searchValue = searchInput.value.toLowerCase();
+
+    // Parcours de la liste des véhicules
+    for (let i = 0; i < vehicles.length; i++) {
+      const vehicle = vehicles[i];
+      const vehicleText = vehicle.textContent.toLowerCase();
+
+      // Affichage ou masquage du véhicule en fonction de la recherche
+      if (vehicleText.includes(searchValue)) {
+        vehicle.style.display = 'block';
+      } else {
+        vehicle.style.display = 'none';
+      }
+    }
+  });
+</script>
+
+<footer>
+    <h2>Coordonnées</h2>
+    <p>Garage de V.PARROT</p>
+    <p>Adresse : 1 rue de la République 31000 Toulouse</p>
+    <p>Téléphone : 05 61 00 00 00</p>
+    <p>Mail : v.parrot@gmail.<i class="fa fa-comment" aria-hidden="true"></i>
+    <p>Horaires d'ouverture :</p>
+        <table class="Horaires">
+        <tbody>
+          <tr>
+            <th scope="row">Lundi</th>
+            <td>8h-12h</td>
+            <td>14h-18h</td>
+          </tr>
+          <tr>
+            <th scope="row">Mardi</th>
+            <td>8h-12h</td>
+            <td>14h-18h</td>
+          </tr>
+            <tr>
+                <th scope="row">Mercredi</th>
+                <td>8h-12h</td>
+                <td>14h-18h</td>
+            </tr>
+            <tr>
+                <th scope="row">Jeudi</th>
+                <td>8h-12h</td>
+                <td>14h-18h</td>
+            </tr>
+            <tr>
+                <th scope="row">Vendredi</th>
+                <td>8h-12h</td>
+                <td>14h-18h</td>
+            </tr>
+            <tr>
+                <th scope="row">Samedi</th>
+                <td>8h-12h</td>
+                <td>Fermé</td>
+            </tr>
+        </tbody>
+      </table>
+    <p>Plan d'accès</p>
+    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"query":"1 Rue de la République, Toulouse, France","width":800,"height":600,"satellite":false,"zoom":12,"placeId":"ChIJ_4IlJ3u7rhIRlEE7Bm_Ofpc","cid":"0x977ece6f063b4194","coords":[43.59892,1.4363762],"lang":"fr","queryString":"1 Rue de la République, Toulouse, France","centerCoord":[43.59892,1.4363762],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1027830"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=1027830';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/fr/map-embed">1 Map</a></div>
+    <p>Formulaire de contact</p>
+    <p>Liens utiles</p>
+    <p>Conditions générales de vente</p>
+    <p>Mentions légales</p>
+    <p>Politique de confidentialité</p>
+    <p>Plan du site</p>
+    <p>Crédits</p>
+    <p>Conception et réalisation du site : Vincent PARROT</p>
+ <p>Droits d'auteur © Garage de V.PARROT</p>
+</footer>
+</body>
+</html>
